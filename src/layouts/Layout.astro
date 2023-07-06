@@ -1,16 +1,16 @@
 ---
 export interface Props {
-  title: string;
+  title?: string;
 }
 
-const { title } = Astro.props;
+const { title = 'Empire Dispatching' } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Empire Dispatching description" />
+    <meta name="description" content="Empire Dispatching  description" />
     <meta name="viewport" content="width=device-width" />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="generator" content={Astro.generator} />
