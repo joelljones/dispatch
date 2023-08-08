@@ -1,7 +1,6 @@
 ---
 import About from '../components/About.astro';
-// import FAQ from '../components/FAQ.astro';
-import FAQ from '../components/FAQ.jsx';
+import FAQ from '../components/FAQ.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
@@ -14,8 +13,7 @@ import Layout from '../layouts/Layout.astro';
     <Hero />
     <About />
     <Services />
-    <!-- <FAQ /> -->
-    <FAQ client:visible />
+    <FAQ />
     <!-- <h1>Welcome to <span class="text-gradient">Astro</span></h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
