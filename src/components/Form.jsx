@@ -49,10 +49,9 @@ export default function Form() {
 
       <button className="self-start mt-3">
         <input
-          className="rounded-lg bg-neutral-50 text-[#18181B] py-2 px-4 text-sm"
+          className="rounded-lg bg-neutral-50 text-[#18181B] py-2 px-4 text-sm cursor-pointer"
           type="submit"
         />
-        {/* <span className="text-sm">Submit</span> */}
       </button>
     </form>
   );
