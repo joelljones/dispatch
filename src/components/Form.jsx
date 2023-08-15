@@ -37,7 +37,7 @@ export default function Form() {
         {...register('Email', { required: true, pattern: /^\S+@\S+$/i })}
       />
       <input
-        className="border-[1px] rounded-lg border-[#27272a] bg-black py-2 px-3 text-sm"
+        className="border-[1px] rounded-lg border-[#27272a] bg-transparent py-2 px-3 text-sm"
         type="tel"
         placeholder="Mobile number"
         {...register('Mobile number', {
