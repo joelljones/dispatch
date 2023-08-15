@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/image": "^0.17.3",
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
     "@headlessui/react": "^1.7.16",
@@ -17,10 +18,11 @@
     "@heroicons/react": "^2.0.18",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
-    "astro": "^2.8.0",
+    "astro": "^2.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
+    "sharp": "^0.32.4",
     "tailwindcss": "^3.3.2"
   }
 }
