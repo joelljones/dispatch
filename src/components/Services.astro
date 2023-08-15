@@ -1,17 +1,12 @@
 ---
 import { Image } from '@astrojs/image/components';
-import servicesImage from '../img/Services.jpeg';
+import pic2 from '../img/pic2.jpeg';
 ---
 
 <!--
   TODO: add services
 -->
 <div id="services" class="h-screen flex bg-black text-white">
-  <section class="w-1/2 flex">
-    <div class="m-auto pl-12">
-      <Image src={servicesImage} alt="descriptive text" class="rounded-lg" />
-    </div>
-  </section>
   <section class="w-1/2 flex flex-col">
     <div class="m-auto">
       <div class="lg:pr-8 lg:pt-4">
@@ -92,6 +87,11 @@ import servicesImage from '../img/Services.jpeg';
           </dl>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="w-1/2 flex">
+    <div class="m-auto pr-12">
+      <Image src={pic2} alt="descriptive text" class="rounded-lg" />
     </div>
   </section>
 </div>
