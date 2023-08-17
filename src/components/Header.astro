@@ -17,7 +17,7 @@
       <li>
         <a
           class="py-1 px-2 hover:bg-black/5 hover:p-2 backdrop-blur-lg outline-offset-2 scroll-smooth ease-in-out rounded transition-all duration-500"
-          href="#services"
+          href="/#services"
         >
           <span class="mx-2">Services</span>
         </a>
@@ -25,7 +25,7 @@
       <li>
         <a
           class="py-1 px-2 hover:bg-black/5 hover:p-2 backdrop-blur-lg outline-offset-2 scroll-smooth ease-in-out rounded transition-all duration-500"
-          href="#about"
+          href="/#about"
         >
           <span class="mx-2">About Us</span>
         </a>
@@ -33,7 +33,7 @@
       <li>
         <a
           class="py-1 px-2 hover:bg-black/5 hover:p-2 backdrop-blur-lg outline-offset-2 scroll-smooth ease-in-out rounded transition-all duration-500"
-          href="#faq"
+          href="/#faq"
         >
           <span class="mx-2">FAQ</span>
         </a>
@@ -41,7 +41,7 @@
       <li>
         <a
           class="py-1 px-2 hover:bg-black/5 hover:p-2 backdrop-blur-lg outline-offset-2 scroll-smooth ease-in-out rounded transition-all duration-500"
-          href="#signup"
+          href="/#signup"
         >
           <span class="mx-2">Sign Up</span>
         </a>
@@ -49,3 +49,21 @@
     </ul>
   </nav>
 </header>
+
+<script>
+  // Get the current URL
+  const currentURL = window.location.href;
+
+  // Check if the URL contains specific keywords or patterns
+  const isPrivacyAndLegal =
+    currentURL.includes('privacy') || currentURL.includes('legal');
+
+  // Get the header element
+  const header = document.getElementsByTagName('header')[0]; // Note the [0] to get the first matching element
+
+  // Apply the appropriate text color based on the URL condition
+  if (isPrivacyAndLegal) {
+    header.classList.remove('text-black');
+    header.classList.add('text-white');
+  }
+</script>

@@ -1,60 +1,72 @@
 ---
+import { ChevronLeftIcon } from '@heroicons/react/20/solid';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <!--
   TODO: edit text
-  TODO: make header text white... use conditional?
 -->
-<Layout title="Empire Logistics | Legal & TOS">
-  <section class="flex flex-col justify-center py-24 px-[500px] gap-5">
-    <h1 class="text-6xl">Legal Page</h1>
-    <p class="text-xl">
-      This is the legal page template. It is a great starter for your company's
-      Terms of Service, Terms & Conditions, Privacy Policy, etc.
-    </p>
+<Layout title="Empire Logistics | Privacy & Legal">
+  <div class="flex flex-col pt-16 mx-72 px-12 mb-16">
+    <section class="font-medium pb-3.5">
+      <p>
+        <button class="py-1 px-2">
+          <a class="inline-flex" href="/#footer">
+            <ChevronLeftIcon className="h-5 w-5 self-center" />
+            <span class="mx-2 text-sm">Back</span>
+          </a>
+        </button>
+      </p>
+    </section>
+    <section>
+      <h1 class="text-[40px] pt-8 pb-2 mb-4">Privacy & Legal</h1>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        This is the legal page template. It is a great starter for your
+        company's Terms of Service, Terms & Conditions, Privacy Policy, etc.
+      </p>
 
-    <h2 class="text-6xl">Terms of Service</h2>
-    <p class="text-xl">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-      obcaecati. Aspernatur facilis molestias vitae. Aliquid debitis eum quis
-      repudiandae pariatur possimus provident accusantium reiciendis nemo, culpa
-      labore laborum, dolorum ea.
-    </p>
-    <p class="text-xl">
-      Corrupti impedit perferendis, libero in, voluptates quod ratione
-      repudiandae veniam sapiente necessitatibus, eius illo. Impedit quibusdam
-      esse saepe placeat incidunt voluptatibus soluta dolore blanditiis ad
-      provident animi illum, est adipisci?
-    </p>
-    <p class="text-xl">
-      Ratione optio necessitatibus numquam dignissimos sunt molestiae ipsum
-      fugiat quae maxime veniam aspernatur eius quidem vel reprehenderit sequi,
-      molestias perspiciatis, illo architecto perferendis nobis, in dolore! Nam
-      asperiores eaque totam.
-    </p>
-    <p class="text-xl">
-      Repudiandae, labore alias. Voluptatem quia itaque sequi, aperiam,
-      reprehenderit ipsum libero quae adipisci possimus eum esse corrupti
-      sapiente harum dignissimos eligendi cum iure tempora magnam nemo, sunt
-      provident vero. Voluptatibus.
-    </p>
+      <h2 class="text-[28px] pt-8 pb-2">Terms of Service</h2>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
+        obcaecati. Aspernatur facilis molestias vitae. Aliquid debitis eum quis
+        repudiandae pariatur possimus provident accusantium reiciendis nemo,
+        culpa labore laborum, dolorum ea.
+      </p>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Corrupti impedit perferendis, libero in, voluptates quod ratione
+        repudiandae veniam sapiente necessitatibus, eius illo. Impedit quibusdam
+        esse saepe placeat incidunt voluptatibus soluta dolore blanditiis ad
+        provident animi illum, est adipisci?
+      </p>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Ratione optio necessitatibus numquam dignissimos sunt molestiae ipsum
+        fugiat quae maxime veniam aspernatur eius quidem vel reprehenderit
+        sequi, molestias perspiciatis, illo architecto perferendis nobis, in
+        dolore! Nam asperiores eaque totam.
+      </p>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Repudiandae, labore alias. Voluptatem quia itaque sequi, aperiam,
+        reprehenderit ipsum libero quae adipisci possimus eum esse corrupti
+        sapiente harum dignissimos eligendi cum iure tempora magnam nemo, sunt
+        provident vero. Voluptatibus.
+      </p>
 
-    <h2 class="text-6xl">Privacy Policy</h2>
-    <p class="text-xl">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus eveniet
-      quibusdam ipsa, veniam adipisci rerum temporibus inventore! Sit quas vero
-      laboriosam tempora alias! Fugit, saepe earum quod modi harum qui.
-      Expedita, pariatur consequuntur! Modi, maiores. Quaerat voluptatibus
-      nostrum non harum rerum dolorem totam qui repellendus, itaque dignissimos
-      eveniet consequuntur ducimus! Non commodi magnam nemo, pariatur facilis
-      repellendus sunt fuga ipsa.
-    </p>
-    <p class="text-xl">
-      Consequuntur similique ab ea tenetur, quo aperiam molestias sed facilis
-      minus eaque eveniet libero quis accusantium deleniti tempore? Qui vel
-      reiciendis voluptates corporis eum repellat maiores fugit, eveniet
-      sapiente ad.
-    </p>
-  </section>
+      <h2 class="text-[28px] pt-8 pb-2">Privacy Policy</h2>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus eveniet
+        quibusdam ipsa, veniam adipisci rerum temporibus inventore! Sit quas
+        vero laboriosam tempora alias! Fugit, saepe earum quod modi harum qui.
+        Expedita, pariatur consequuntur! Modi, maiores. Quaerat voluptatibus
+        nostrum non harum rerum dolorem totam qui repellendus, itaque
+        dignissimos eveniet consequuntur ducimus! Non commodi magnam nemo,
+        pariatur facilis repellendus sunt fuga ipsa.
+      </p>
+      <p class="text-sm pb-3.5 max-w-[792.75px]">
+        Consequuntur similique ab ea tenetur, quo aperiam molestias sed facilis
+        minus eaque eveniet libero quis accusantium deleniti tempore? Qui vel
+        reiciendis voluptates corporis eum repellat maiores fugit, eveniet
+        sapiente ad.
+      </p>
+    </section>
+  </div>
 </Layout>
