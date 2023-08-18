@@ -10,7 +10,7 @@ export default function Accordion() {
         <Disclosure>
           {({ open }) => (
             <div className="border-b-[1px] border-[#27272a]">
-              <Disclosure.Button className="flex w-full justify-between py-4 text-left text-base font-medium hover:underline">
+              <Disclosure.Button className="flex w-full justify-between py-4 text-left text-base hover:underline">
                 <span>What is your refund policy?</span>
                 <ChevronUpIcon
                   className={`${open ? 'rotate-180 transform' : ''} h-5 w-5`}
@@ -26,7 +26,7 @@ export default function Accordion() {
         <Disclosure>
           {({ open }) => (
             <div className="border-b-[1px] border-[#27272a]">
-              <Disclosure.Button className="flex w-full justify-between py-4 text-left text-base font-medium hover:underline">
+              <Disclosure.Button className="flex w-full justify-between py-4 text-left text-base hover:underline">
                 <span>Do you offer technical support?</span>
                 <ChevronUpIcon
                   className={`${open ? 'rotate-180 transform' : ''} h-5 w-5`}

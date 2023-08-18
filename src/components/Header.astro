@@ -5,15 +5,24 @@
   TODO: create nav animation
 -->
 <header
-  class="absolute w-screen px-8 py-4 flex place-content-between text-black"
+  class="absolute h-[56px] w-screen px-5 flex place-content-between text-black items-center"
 >
   <div class="logo">
     <a class="px-4" href="/">
       <span>Empire Logistics</span>
     </a>
   </div>
-  <nav>
-    <ul class="flex place-content-between">
+  <nav class="">
+    <ol class="xl:hidden align-end">
+      <li>
+        <button
+          class="py-1 px-2 border-[3px] border-transparent backdrop-blur-md rounded bg-[#000000]/[.05] text-[#171A20] hover:bg-[#000000]/[.075]"
+        >
+          <span class="text-sm mx-2">Menu</span>
+        </button>
+      </li>
+    </ol>
+    <ul class="hidden xl:flex place-content-between">
       <li>
         <a
           class="py-1 px-2 hover:bg-black/5 hover:p-2 backdrop-blur-lg outline-offset-2 scroll-smooth ease-in-out rounded transition-all duration-500"
@@ -48,22 +57,22 @@
       </li>
     </ul>
   </nav>
+
+  <script>
+    // Get the current URL
+    const currentURL = window.location.href;
+
+    // Check if the URL contains specific keywords or patterns
+    const isPrivacyAndLegal =
+      currentURL.includes('privacy') || currentURL.includes('legal');
+
+    // Get the header element
+    const header = document.getElementsByTagName('header')[0]; // Note the [0] to get the first matching element
+
+    // Apply the appropriate text color based on the URL condition
+    if (isPrivacyAndLegal) {
+      header.classList.remove('text-black');
+      header.classList.add('text-white');
+    }
+  </script>
 </header>
-
-<script>
-  // Get the current URL
-  const currentURL = window.location.href;
-
-  // Check if the URL contains specific keywords or patterns
-  const isPrivacyAndLegal =
-    currentURL.includes('privacy') || currentURL.includes('legal');
-
-  // Get the header element
-  const header = document.getElementsByTagName('header')[0]; // Note the [0] to get the first matching element
-
-  // Apply the appropriate text color based on the URL condition
-  if (isPrivacyAndLegal) {
-    header.classList.remove('text-black');
-    header.classList.add('text-white');
-  }
-</script>
