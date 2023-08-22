@@ -2,37 +2,41 @@
 ---
 
 <!--
-  TODO: replace bg img with video
-  TODO: push cta btns lower
+  TODO: push text & cta btns lower
 -->
-<div
-  class="bg-[url('src/img/pic1.jpeg')] h-screen bg-center bg-cover flex justify-center text-black"
->
-  <section
-    class="mt-14 pt-20 justify-self-center flex flex-col gap-1 text-center"
+<div class="relative flex justify-center h-screen overflow-hidden text-black">
+  <div class="relative mt-14 z-10 flex flex-col justify-between">
+    <section class="pt-20 flex flex-col gap-1 text-center">
+      <h1 class="text-[40px]">Dispatch Services</h1>
+      <span>Book a Load Today</span>
+    </section>
+    <section class="mb-32 flex flex-col min-[640px]:flex-row gap-5">
+      <button class="flex-grow">
+        <a
+          href="#services"
+          class="border-[3px] border-transparent backdrop-blur-md rounded bg-[#F4F4F4]/[.8] text-[#393C41] py-2 px-20 flex items-center justify-center"
+        >
+          <span class="text-sm">Learn More</span>
+        </a>
+      </button>
+      <button class="flex-grow">
+        <a
+          href="#signup"
+          class="border-[3px] border-transparent backdrop-blur-md rounded bg-[#171A20]/[.65] text-white py-2 px-20 flex items-center justify-center"
+        >
+          <span class="text-sm">Start Now</span>
+        </a>
+      </button>
+    </section>
+  </div>
+  <video
+    autoplay
+    loop
+    muted
+    poster="src/img/pic1.jpeg"
+    class="absolute w-auto min-w-full min-h-full max-w-none self-center"
   >
-    <h1 class="text-[40px]">Dispatch Services</h1>
-    <span>Book a Load Today</span>
-  </section>
-
-  <section
-    class="absolute inset-x-0 bottom-0 mb-32 flex place-content-center gap-5"
-  >
-    <button>
-      <a
-        href="#services"
-        class="border-[3px] border-transparent backdrop-blur-md rounded bg-[#F4F4F4]/[.8] text-[#393C41] py-2 px-20"
-      >
-        <span class="text-sm">Learn More</span>
-      </a>
-    </button>
-    <button>
-      <a
-        href="#signup"
-        class="border-[3px] border-transparent backdrop-blur-md rounded bg-[#171A20]/[.65] text-white py-2 px-20"
-      >
-        <span class="text-sm">Start Now</span>
-      </a>
-    </button>
-  </section>
+    <source src="src/img/vid1.mp4" type="video/mp4" />Your browser does not
+    support the video tag.
+  </video>
 </div>
