@@ -5,6 +5,9 @@ module.exports = {
     screens: {
       xl: '1200px',
     },
+    fontFamily: {
+      gotham: ['Gotham', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
