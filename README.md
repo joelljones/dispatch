@@ -4,7 +4,7 @@ Logistics / Trucking company website.
 
 ![screenshot](src/img/screenshot.png)
 
-**Link to project:**
+**Link to project:** https://dispatch-svcs.netlify.app
 
 ## How It's Made:
 
