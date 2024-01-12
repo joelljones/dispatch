@@ -22,7 +22,7 @@ const { title = 'Dispatch' } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="font-gotham">
+  <body>
     <Header />
     <slot />
     <Footer />
@@ -30,6 +30,14 @@ const { title = 'Dispatch' } = Astro.props;
 </html>
 
 <style is:global>
+  /* Register your custom font family and tell the browser where to find it. */
+  @font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham Medium.otf') format('otf');
+    font-weight: normal;
+    font-style: medium;
+    font-display: swap;
+  }
   html {
     background-color: black;
     color: white;

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -6,7 +9,7 @@ module.exports = {
       xl: '1200px',
     },
     fontFamily: {
-      gotham: ['Gotham', 'sans-serif'],
+      sans: ['Gotham', ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },
