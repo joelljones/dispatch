@@ -1,6 +1,43 @@
 ---
 import { Image } from '@astrojs/image/components';
+import { CheckIcon } from '@heroicons/react/20/solid';
 import pic2 from '../img/pic2.jpeg';
+
+const servicesData = {
+  heading: "Your logistics partner",
+  subheading: "What We Offer",
+  description: "Our dispatch services are designed to empower you, allowing you to focus solely on the road ahead.",
+  features: [
+    {
+      title: "Effortless Load Management:",
+      description: "We handle the tedious task of finding, coordinating, and tracking loads for you."
+    },
+    {
+      title: "Tailored Trip Planning:",
+      description: "Our custom trip planning ensures every journey is optimized for efficiency, safety, and revenue."
+    },
+    {
+      title: "Financial Ease:",
+      description: "Credit checks, factoring assistance, and top-rate negotiation – we handle the financial aspects, so you can drive with peace of mind."
+    },
+    {
+      title: "Maximum Revenue:",
+      description: "With our industry experience, we specialize in securing the highest paying loads."
+    },
+    {
+      title: "Streamlined Operations:",
+      description: "From invoicing to paperwork, we take care of it all. Focus on driving, while we manage the logistics."
+    },
+    {
+      title: "Freedom to Choose:",
+      description: "We prioritize your preferences and no forced dispatching means you're in control of your trucking journey."
+    },
+    {
+      title: "Safety and Growth:",
+      description: "Elevate safety standards, enhance operational efficiency, and accelerate your revenue growth with our dedicated support."
+    }
+  ]
+};
 ---
 
 <div id="services" class="min-h-screen flex flex-col xl:flex-row my-12">
@@ -8,160 +45,27 @@ import pic2 from '../img/pic2.jpeg';
     <div class="m-auto p-12">
       <div class="lg:pr-8 lg:pt-4">
         <div class="lg:max-w-lg">
-          <h2 class="text-base font-semibold leading-7">
-            Your logistics partner
+          <h2 class="text-lg font-semibold leading-7">
+            {servicesData.heading}
           </h2>
           <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-            What We Offer
+            {servicesData.subheading}
           </p>
-          <p class="mt-6 max-w-xl text-lg leading-8">
-            Our dispatch services are designed to empower you, allowing you to
-            focus solely on the road ahead.
+          <p class="mt-6 max-w-xl text-xl leading-8 font-semibold">
+            {servicesData.description}
           </p>
-          <dl
-            class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none"
-          >
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Effortless Load Management:
-              </dt>
-              <dd class="inline">
-                We handle the tedious task of finding, coordinating, and
-                tracking loads for you.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Tailored Trip Planning:
-              </dt>
-              <dd class="inline">
-                Our custom trip planning ensures every journey is optimized for
-                efficiency, safety, and revenue.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Financial Ease:
-              </dt>
-              <dd class="inline">
-                Credit checks, factoring assistance, and top-rate negotiation –
-                we handle the financial aspects, so you can drive with peace of
-                mind.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Maximum Revenue:
-              </dt>
-              <dd class="inline">
-                With our industry experience, we specialize in securing the
-                highest paying loads.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Streamlined Operations:
-              </dt>
-              <dd class="inline">
-                From invoicing to paperwork, we take care of it all. Focus on
-                driving, while we manage the logistics.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Freedom to Choose:
-              </dt>
-              <dd class="inline">
-                We prioritize your preferences and no forced dispatching means
-                you're in control of your trucking journey.
-              </dd>
-            </div>
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                <svg
-                  class="absolute left-1 top-1 h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Safety and Growth:
-              </dt>
-              <dd class="inline">
-                Elevate safety standards, enhance operational efficiency, and
-                accelerate your revenue growth with our dedicated support.
-              </dd>
-            </div>
+          <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+            {servicesData.features.map((feature) => (
+              <div class="relative pl-9">
+                <dt class="inline font-medium text-lg">
+									<span class="absolute left-1 top-1 h-5 w-5"><CheckIcon /></span>
+                  {feature.title}
+                </dt>
+                <dd class="inline font-normal">
+                  {feature.description}
+                </dd>
+              </div>
+            ))}
           </dl>
         </div>
       </div>
@@ -169,7 +73,7 @@ import pic2 from '../img/pic2.jpeg';
   </section>
   <section class="xl:w-1/2 flex">
     <div class="m-auto px-12">
-      <Image src={pic2} alt="descriptive text" class="rounded-lg" />
+      <Image src={pic2} alt="Front view of a white Tesla semi-truck driving on a highway at dusk" class="rounded-lg" />
     </div>
   </section>
 </div>
